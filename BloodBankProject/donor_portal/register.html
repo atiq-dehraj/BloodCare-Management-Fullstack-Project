@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Registration | BloodCare</title>
+    <link rel="stylesheet" href="donor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="portal-container">
+        <div class="form-card">
+            <div class="header-section">
+                <h2>Register as a Donor</h2>
+                <p>Join our community and save lives today.</p>
+            </div>
+
+            <form id="registerForm" action="../backend/register_process.php" method="POST">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="donorName" name="donorName" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Blood Type *</label>
+                        <select id="bloodType" name="bloodType" required>
+                            <option value="">Select Type</option>
+                            <option value="A+">A+</option><option value="A-">A-</option>
+                            <option value="B+">B+</option><option value="B-">B-</option>
+                            <option value="O+">O+</option><option value="O-">O-</option>
+                            <option value="AB+">AB+</option><option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="donorPhone" name="donorPhone" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address *</label>
+                        <input type="email" id="donorEmail" name="donorEmail" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Create Password *</label>
+                    <input type="password" id="donorPassword" name="donorPassword" required>
+                </div>
+
+                <button type="submit" class="primary-btn">Complete Registration</button>
+                <p class="redirect-link">Already a donor? <a href="../login_system/login.html">Login here</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- <script src="donor.js"></script> -->
+</body>
+</html>

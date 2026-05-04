@@ -1,0 +1,2 @@
+[2026-04-25 18:13:56] SMTP Error: Could not authenticate.
+[2026-04-25 18:14:29] SMTP Error: Could not authenticate.

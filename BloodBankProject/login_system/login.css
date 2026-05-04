@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.login-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #e63946; /* Medical red accent */
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.login-header h2 {
+    color: #1d3557;
+    font-size: 1.8rem;
+}
+
+.login-header p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1d3557;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.required {
+    color: #e63946;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #495057;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus, input:focus {
+    border-color: #e63946;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+}
+
+.input-wrapper input {
+    padding-left: 40px;
+}
+
+.login-submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login-submit-btn:hover {
+    background-color: #d62828;
+}
+
+.error-message {
+    color: #e63946;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    text-align: center;
+    display: none; /* Hidden by default */
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.login-footer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.login-footer a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.security-note {
+    font-size: 0.8rem !important;
+    color: #2a9d8f !important;
+}

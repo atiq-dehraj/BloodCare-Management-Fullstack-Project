@@ -1,0 +1,52 @@
+# ============================================================
+# BloodCare — .gitignore
+# ============================================================
+
+# Environment & credentials — NEVER commit these
+.env
+*.env
+config/db_config.php
+config/config.php
+
+# Composer dependencies (install via `composer install`)
+/vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+nbproject/
+
+# PHP error & debug logs
+*.log
+error_log
+php_errors.log
+
+# Uploaded user files (patient/donor uploads are sensitive data)
+uploads/
+/public/uploads/
+
+# Cache files
+cache/
+*.cache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.bak
+
+# Compiled or minified output (if using a build tool)
+/dist/
+/build/
+
+# Node modules (if any frontend tooling is added later)
+node_modules/
+package-lock.json

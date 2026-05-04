@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Login | BloodCare</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                <h2>BloodCare Portal</h2>
+                <p>Secure System Access</p>
+            </div>
+
+            <form id="loginForm" action="../backend/login_process.php" method="POST">
+
+            <!-- </form> -->
+                
+                <div class="input-group">
+                    <label for="userRole">Select Role <span class="required">*</span></label>
+                    <select id="userRole" name="userRole" required>
+                        <option value="" disabled selected>-- Choose your account type --</option>
+                        <option value="donor">Donor</option>
+                        <option value="staff">Healthcare Staff</option>
+                        <option value="manager">Blood Bank Manager</option>
+                        <option value="hospital">Hospital Administrator</option>
+                        <option value="admin">System Administrator</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="userID">User ID / Email <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="userID" name="userID" placeholder="Enter your ID or Email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <div class="error-message" id="errorMessage"></div>
+
+                <button type="submit" class="login-submit-btn">Secure Login</button>
+            </form>
+
+            <div class="login-footer">
+                <p>New Donor? <a href="../donor_portal/register.html">Register here</a> to save lives.</p>
+                <p class="security-note"><i class="fas fa-shield-alt"></i> HIPAA Compliant & Secure</p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
